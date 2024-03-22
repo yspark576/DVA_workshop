@@ -1,4 +1,4 @@
-par
+
 ## Part 1. 
 ![alt text](<Screen Shot 2024-03-22 at 12.19.45 PM.png>)
 ![alt text](<Screen Shot 2024-03-22 at 12.19.59 PM.png>)
