@@ -17,16 +17,40 @@ par
 > Goal: We're going to use the bash commands mentioned above to perform a simple analysis using command lines.
 
 1. Open Terminal (Mac) or Git Bash (Windows).
-2. Check the current directory (where you are right now) using pwd.
+2. Check the current directory (where you are right now) using `pwd`.
     ```
     pwd
     ```
 
-3. Navigate to the folder where you downloaded the materials using the cd FOLDER command. You can use the Tab key to see matching results, which will reduce the amount of typing.
-4. Check if we have all the folders using ls [FOLDER].
-5. We are going to save our analysis results in a separate folder. Create a result_control folder to save the results using the mkdir [FOLDER] command.
-6. Use the command line to run the analysis. Here, we are going to use the R program with a script, but these command lines could be anything that you would like to use, as long as the program has a CLI (Command Line Interface).
+3. Navigate to the folder where you downloaded the materials using the `cd FOLDER` command. You can use the Tab key to see matching results, which will reduce the amount of typing.
+    ```
+    cd Downloads/DVA_workshop/DVA_workshop
+    ```
+4. Check if we have all the folders using `ls [FOLDER]`.
+    ```
+    ## to list items in current folder
+    ls      
+    ```
 
+    ```
+    ## list items in rawdata_control folder
+    ls rawdata_control  
+    ```
+5. We are going to save our analysis results in a separate folder. Create a result_control folder to save the results using the `mkdir [FOLDER]` command.
+       ```
+    mkdir result_control
+    ```
+6. Use the command line to run the analysis. Here, we are going to use the R program with a script, but these command lines could be anything that you would like to use, as long as the program has a CLI (Command Line Interface).
+      ```
+    ##      SCRIPT_FILENAME   INPUT_FILENAME_IF_NEEDED   OPTIONS
+    Rscript script_analysis.r rawdata_control/data_1.csv 1
+    ```
+
+    ```
+    ## other example, which is BEAST program for phylodynamic analysis
+    ## don't run this command 
+    BEAST input.xml
+    ```
 
 
 
